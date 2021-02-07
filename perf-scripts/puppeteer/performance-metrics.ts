@@ -1,0 +1,20 @@
+import * as Puppeteer from "puppeteer";
+import { Page } from "puppeteer/lib/cjs/puppeteer/common/Page";
+import { Browser } from "puppeteer/lib/cjs/puppeteer/common/Browser";
+import { PuppeteerNode } from "puppeteer/lib/cjs/puppeteer/node/Puppeteer";
+import { CoverageEntry } from "puppeteer/lib/cjs/puppeteer/api-docs-entry";
+
+const puppeteer: PuppeteerNode = Puppeteer.default;
+
+const webUrl = "https://microsoft.com";
+
+async function start() {
+  const browser: Browser = await puppeteer.launch({ headless: false });
+  const page: Page = await browser.newPage();
+  await page.goto(webUrl, {});
+  const metrics = await page.metrics();
+  console.log({ metrics });
+  await browser.close();
+}
+
+start();

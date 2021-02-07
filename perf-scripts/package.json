@@ -8,7 +8,8 @@
     "tsc": "tsc",
     "code:coverage": "ts-node puppeteer/code-coverage.ts",
     "network:throttle": "ts-node playwright/network-throttle.ts",
-    "perf":"ts-node playwright/performance-metrics.ts"
+    "perf":"ts-node playwright/performance-metrics.ts",
+    "perf:pptr": "ts-node puppeteer/performance-metrics.ts"
   },
   "keywords": [],
   "author": "",
