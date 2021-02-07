@@ -1,3 +1,5 @@
+perf-scripts/node_modules/*
+
 # Logs
 logs
 *.log
