@@ -1,0 +1,23 @@
+{
+  "name": "web-perf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "code:coverage": "ts-node puppeteer/code-coverage.ts",
+    "network:throttle": "ts-node playwright/network-throttle.ts",
+    "perf":"ts-node playwright/performance-metrics.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/puppeteer": "^5.4.3",
+    "playwright": "^1.8.0",
+    "puppeteer": "^7.0.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
